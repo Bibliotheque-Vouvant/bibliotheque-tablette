@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,7 +12,7 @@ body{
   text-align:center;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; /* Pour plein écran */
 }
 
 header{
@@ -54,24 +53,7 @@ footer{
   font-size:16px;
 }
 
-/* bouton accueil flottant */
-
-.home-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#2c5aa0;
-  color:white;
-  font-size:20px;
-  padding:15px 20px;
-  border-radius:12px;
-  text-decoration:none;
-  box-shadow:0 4px 10px rgba(0,0,0,0.3);
-  z-index:1000;
-}
-
 /* Centrage total du body pour plein écran */
-
 body > * {
   display: flex;
   flex-direction: column;
@@ -79,7 +61,6 @@ body > * {
   align-items: center;
   min-height: 100%;
 }
-
 </style>
 
 <script>
@@ -91,7 +72,7 @@ var inactivityTime = function () {
     document.onclick = resetTimer;
 
     function goHome() {
-        location.href="https://bibliotheque-vouvant.github.io/bibliotheque-tablette/";
+        location.reload();
     }
 
     function resetTimer() {
@@ -144,4 +125,32 @@ Documents PDF
 <a class="card" href="https://read.bookcreator.com/D3NbA00iL9SuPzJ020XG8IXbMKD3/vnYH2uOARBqjIJ_kAVmC3Q/TdowKg0PTGem7uWyfPBESQ" target="_blank">
 <div class="icon">📚</div>
 Les Juifs en Vendée<br>
-```
+Fanny et Cécile Rajngewic
+</a>
+
+</div>
+
+<footer>
+Merci de respecter le matériel de la bibliothèque
+</footer>
+
+<!-- Script plein écran -->
+<script>
+function goFullscreen() {
+    const elem = document.documentElement;
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { // Android / Safari
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { // Edge / IE
+        elem.msRequestFullscreen();
+    }
+    document.body.removeEventListener("click", goFullscreen);
+}
+
+// Écoute le premier tap n'importe où sur le body
+document.body.addEventListener("click", goFullscreen);
+</script>
+
+</body>
+</html>
