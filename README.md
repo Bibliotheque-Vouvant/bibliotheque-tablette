@@ -10,6 +10,7 @@ body{
   background:#eef2f7;
   margin:0;
   text-align:center;
+  overflow:hidden;
 }
 header{
   background:#2c5aa0;
@@ -52,15 +53,14 @@ footer{
 </style>
 
 <script>
-// Plein écran au premier tap
+// Plein écran automatique au démarrage
 function goFullscreen(){
   const elem = document.documentElement;
   if (elem.requestFullscreen) { elem.requestFullscreen(); }
   else if (elem.webkitRequestFullscreen) { elem.webkitRequestFullscreen(); }
   else if (elem.msRequestFullscreen) { elem.msRequestFullscreen(); }
-  document.body.removeEventListener('click', goFullscreen);
 }
-document.body.addEventListener('click', goFullscreen);
+document.addEventListener('DOMContentLoaded', goFullscreen);
 
 // Code admin
 function adminAccess(){
@@ -101,7 +101,7 @@ window.onload = inactivityTime;
   Plateforme e-media
 </a>
 
-<a class="card" href="intent://#Intent;package=com.toutapprendre;action=android.intent.action.MAIN;end">
+<a class="card" href="intent://#Intent;package=com.toutapprendre;component=com.toutapprendre.toutapprendre/.MainActivity;end">
   <div class="icon">📰</div>
   Accès à la presse
 </a>
