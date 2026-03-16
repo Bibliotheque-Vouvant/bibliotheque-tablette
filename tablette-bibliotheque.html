@@ -53,7 +53,7 @@ footer{
 </style>
 
 <script>
-// Plein écran automatique au démarrage
+// Plein écran automatique au premier tap
 function goFullscreen(){
   const elem = document.documentElement;
   if (elem.requestFullscreen) { elem.requestFullscreen(); }
@@ -101,7 +101,7 @@ window.onload = inactivityTime;
   Plateforme e-media
 </a>
 
-<a class="card" href="intent://#Intent;package=com.toutapprendre;component=com.toutapprendre.toutapprendre/.MainActivity;end">
+<a class="card" href="https://biblio.toutapprendre.com/newbiblio/listing.php" target="_self">
   <div class="icon">📰</div>
   Accès à la presse
 </a>
