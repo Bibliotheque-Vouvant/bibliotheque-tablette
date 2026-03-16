@@ -101,19 +101,9 @@ window.onload = inactivityTime;
 
 <div class="grid">
 
-<a class="card" href="https://www.youtube.com" target="_self">
-<div class="icon">▶</div>
-YouTube
-</a>
-
 <a class="card" href="https://emedia.vendee.fr/" target="_self">
 <div class="icon">📖</div>
 Plateforme e-media
-</a>
-
-<a class="card" href="https://www.google.fr" target="_self">
-<div class="icon">🌐</div>
-Internet
 </a>
 
 <a class="card" href="https://www.toutapprendre.com/" target="_self">
@@ -121,14 +111,19 @@ Internet
 Accès à la presse
 </a>
 
-<a class="card" href="https://read.bookcreator.com/D3NbA00iL9SuPzJ020XG8IXbMKD3/vnYH2uOARBqjIJ_kAVmC3Q/TdowKg0PTGem7uWyfPBESQ/TdowKg0PTGem7uWyfPBESQ" target="_self">
-<div class="icon">📚</div>
-Les Juifs en Vendée
+<a class="card" href="https://www.google.fr" target="_self">
+<div class="icon">🌐</div>
+Internet
 </a>
 
-<a class="card" href="https://www.vendee.fr" target="_self">
-<div class="icon">ℹ</div>
-Infos Vendée
+<a class="card" href="https://www.youtube.com" target="_self">
+<div class="icon">▶</div>
+YouTube
+</a>
+
+<a class="card" href="https://read.bookcreator.com/D3NbA00iL9SuPzJ020XG8IXbMKD3/vnYH2uOARBqjIJ_kAVmC3Q/TdowKg0PTGem7uWyfPBESQ" target="_self">
+<div class="icon">📚</div>
+Les Juifs en Vendée
 </a>
 
 </div>
