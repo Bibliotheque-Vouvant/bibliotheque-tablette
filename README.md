@@ -106,7 +106,7 @@ window.onload = inactivityTime;
 Plateforme e-media
 </a>
 
-<a class="card" href="intent://#Intent;package=com.toutapprendre target="_self">
+<a class="card" href="intent:#Intent;action=android.intent.action.MAIN;package=com.toutapprendre;end">
 <div class="icon">📰</div>
 Accès à la presse
 </a>
