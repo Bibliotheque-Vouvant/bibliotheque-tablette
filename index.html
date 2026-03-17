@@ -54,6 +54,20 @@ function adminAccess(){
     alert("Mode administrateur activé");
   }
 }
+
+// Timer retour accueil (5 min)
+var inactivityTime = function () {
+  var time;
+  function resetTimer() {
+    clearTimeout(time);
+    time = setTimeout(function(){ location.reload(); }, 300000);
+  }
+  window.onload = resetTimer;
+  document.onmousemove = resetTimer;
+  document.onclick = resetTimer;
+  document.ontouchstart = resetTimer;
+};
+window.onload = inactivityTime;
 </script>
 
 </head>
@@ -84,6 +98,11 @@ Internet
 <a class="card" href="https://www.youtube.com">
 <div class="icon">▶</div>
 YouTube
+</a>
+
+<a class="card" href="https://read.bookcreator.com/D3NbA00iL9SuPzJ020XG8IXbMKD3/vnYH2uOARBqjIJ_kAVmC3Q/TdowKg0PTGem7uWyfPBESQ">
+<div class="icon">📚</div>
+Les Juifs en Vendée
 </a>
 
 </div>
